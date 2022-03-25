@@ -1,1 +1,1 @@
-# .vim
+## vim configuration for colemak user
