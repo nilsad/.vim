@@ -200,7 +200,6 @@ noremap Q :q<CR>
 noremap <C-q> :qa<CR>
 noremap S :w<CR>
 
-
 " insert Key
 noremap u i
 noremap U I
