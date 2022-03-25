@@ -55,10 +55,6 @@ The most basic configuration, without any plug-ins.
 | `s` `n`     | Create a new horizontal split screen and place it below the current window  |
 | `s` `h`     | Create a new vertical split screen and place it left to the current window  |
 | `s` `i`     | Create a new vertical split screen and place it right to the current window |
-| `s` `v`     | Set the two splits to be vertical                                           |
-| `s` `h`     | Set the two splits to be horizontal                                         |
-| `s` `r` `v` | Rotate splits and arrange splits vertically                                 |
-| `s` `r` `h` | Rotate splits and arrange splits horizontally                               |
 
 ##### 2.2 Moving the Cursor Between Different Windows
 | Shortcut      | Action                         |
@@ -68,3 +64,18 @@ The most basic configuration, without any plug-ins.
 | `SPACE` + `i` | Move cursor one window right   |
 | `SPACE` + `e` | Move cursor one window up      |
 | `SPACE` + `n` | Move cursor one window down    |
+
+##### 2.3 Closing Windows
+| Shortcut    | Action                                                                                                     |
+|-------------|------------------------------------------------------------------------------------------------------------|
+| `Q`         | Close the current window                                                                                   |
+| `SPACE` `q` | Close the window below the current window. (The current window will be closed if there is no window below) |
+
+#### 3 Tab Management
+| Shortcut    | Action           |
+|-------------|------------------|
+| `t` `n`     | Create a new tab |
+| `t` `h`     | Go one tab left  |
+| `t` `i`     | Go One tab right |
+| `t` `m` `h` | Move tab left    |
+| `t` `m` `i` | Move tab right   |
