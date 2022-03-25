@@ -4,7 +4,7 @@ The most basic configuration, without any plug-ins.
 `<leader>` = `<space>`
 #### 1 Basic Editor Features
 ##### 1.1 The Most Basics
-**`l`** : switchs to **`INSERT`** : mode (same as key `i` in vanilla vim)
+**`u`** : switchs to **`INSERT`** : mode (same as key `i` in vanilla vim)
 
 **`Q`** : quits current vim window (same as command `:q` in vanilla vim)
 
@@ -12,7 +12,7 @@ The most basic configuration, without any plug-ins.
 
 **_IMPORTANT_**
 
-  Since the `i` key has been mapped to `l`, every command (combination) that involves `i` should use `l` instead (for example, `ciw` should be `clw`).
+  Since the `i` key has been mapped to `u`, every command (combination) that involves `i` should use `u` instead (for example, `ciw` should be `cuw`).
 
 ##### 1.2 Remapped Cursor Movement
 | Shortcut   | Action                                                    | Equivalent |
@@ -32,6 +32,7 @@ The most basic configuration, without any plug-ins.
 ##### 1.3 Remapped Text Manipulating Commands in Normal Mode
 | Shortcut        | Action                                |
 |-----------------|---------------------------------------|
+| `u`             | **undo**                              |
 | `<`             | Un-indent                             |
 | `>`             | Indent                                |
 
