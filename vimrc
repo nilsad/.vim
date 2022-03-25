@@ -10,6 +10,7 @@
 "   -> Text, tab and indent related
 "   -> Key mappings
 "   -> Cursor movement
+"   -> Window management
 "   -> Status line
 "   -> Spell checking
 "   -> Misc
@@ -200,6 +201,7 @@ noremap Q :q<CR>
 noremap <C-q> :qa<CR>
 noremap S :w<CR>
 
+
 " insert Key
 noremap u i
 noremap U I
@@ -249,6 +251,42 @@ noremap B 5b
 
 " set k (same as n, cursor left) to 'end of word'
 noremap k e
+
+
+""""""""""""""""""""""""""""""
+" => Window management
+""""""""""""""""""""""""""""""
+" Use <space> + new arrow keys for moving the cursor around windows
+noremap <LEADER>w <C-w>w
+noremap <LEADER>h <C-w>h
+noremap <LEADER>n <C-w>j
+noremap <LEADER>e <C-w>k
+noremap <LEADER>i <C-w>l
+
+" split the screens to up (horizontal), down (horizontal), left (vertical), right (vertical)
+noremap sh :set nosplitright<CR>:vsplit<CR>:set splitright<CR>
+noremap sn :set splitbelow<CR>:split<CR>
+noremap se :set nosplitbelow<CR>:split<CR>:set splitbelow<CR>
+noremap si :set splitright<CR>:vsplit<CR>
+
+" Resize splits with arrow keys
+noremap <up> :res +5<CR>
+noremap <down> :res -5<CR>
+noremap <left> :vertical resize-5<CR>
+noremap <right> :vertical resize+5<CR>
+
+" Press <SPACE> + q to close the window below the current window
+noremap <LEADER>q <C-w>j:q<CR>
+
+" Create a new tab with tn
+noremap tn :tabe<CR>
+noremap tN :tab split<CR>
+" Move around tabs with th and ti
+noremap th :-tabnext<CR>
+noremap ti :+tabnext<CR>
+" Move the tabs with tmh and tmi
+noremap tmh :-tabmove<CR>
+noremap tmi :+tabmove<CR>
 
 
 """"""""""""""""""""""""""""""
