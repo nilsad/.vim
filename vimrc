@@ -62,7 +62,7 @@ set noerrorbells
 set visualbell
 
 " Words check
-set spell spelllang=en_us
+" set spell spelllang=en_us
 
 " cursor line
 let &t_SI = "\<Esc>[5 q"
@@ -139,12 +139,11 @@ set splitbelow
 syntax enable
 
 try
-    colorscheme slate
+    colorscheme torte
 catch
 endtry
 
 set background=dark
-colorscheme desert
 
 " Set extra options when running in GUI mode
 if has("gui_running")
@@ -355,9 +354,6 @@ func! CompileRun()
     elseif &filetype == 'tex'
         silent! exec "VimtexStop"
         silent! exec "VimtexCompile"
-    elseif &filetype == 'dart'
-        exec "CocCommand flutter.run -d ".g:flutter_default_device
-        CocCommand flutter.dev.openDevLog
     elseif &filetype == 'javascript'
         set splitbelow
         :sp
