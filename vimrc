@@ -1,7 +1,7 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
-" Github: Bedivere7
-" Maintainer: Bedivere
+" Github: zezhoud
+" Maintainer: Ding
 "
 " Sections:
 "   -> General
@@ -168,10 +168,10 @@ set expandtab
 set smarttab
 set shiftround
 
-" 1 tab == 4 spaces
-set shiftwidth=4
-set tabstop=4
-set softtabstop=4
+" 1 tab == 2 spaces
+set shiftwidth=2
+set tabstop=2
+set softtabstop=2
 
 " list
 set list
@@ -194,6 +194,9 @@ let mapleader="\<Space>"
 
 " disable the default s key
 noremap s <nop>
+
+" use kk to exit insert model
+inoremap kk <esc>
 
 " Save & quit
 noremap Q :q<CR>
