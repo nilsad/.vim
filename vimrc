@@ -1,7 +1,7 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
-" Github: zezhoud
-" Maintainer: Ding
+" Github: nilsad
+" Maintainer: Zezhou Ding
 "
 " Sections:
 "   -> General
@@ -194,9 +194,6 @@ let mapleader="\<Space>"
 
 " disable the default s key
 noremap s <nop>
-
-" use kk to exit insert model
-inoremap kk <esc>
 
 " Save & quit
 noremap Q :q<CR>
